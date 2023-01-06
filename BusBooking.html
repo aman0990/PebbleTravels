@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Bus Booking Page</title>
 	<style type="text/css">
 		.first{
 			background: linear-gradient(to left, #ff00cc, #333399);
@@ -35,7 +35,7 @@
 			font-size: 36px;
 			text-align: center;
 		}
-		#login{
+		#bus-booking{
 			margin-top: 20px;
 			margin-left: auto;
 			margin-right: auto;
@@ -45,7 +45,7 @@
 			border-radius: 10px;
 			box-shadow: 0px 0px 10px 0px #000;
 		}
-		#login input[type="text"],  #login input[type="password"]{
+		#bus-booking input[type="text"],  #bus-booking input[type="password"]{
 			width: 100%;
 			padding: 10px;
 			margin-top: 10px;
@@ -54,7 +54,7 @@
 			border-bottom: 1px solid #000;
 			outline: none;
 		}
-		#login input[type="submit"]{
+		#bus-booking input[type="submit"]{
 			width: 100%;
 			padding: 10px;
 			margin-top: 10px;
@@ -75,26 +75,28 @@
 	</div>
 	<div class="second">
 		<select>
-			<option>Home</option>
-			<option>New User</option>
-			<option>About Us</option>
-			<option>Contact Us</option>
-			<option>Flight Booking</option>
-			<option>Train Booking</option>
+			<option><a href="index.html">Home</a></option>
+			<option><a href="create1.html">New User</a></option>
+			<option><a href="aboutus.html">About Us</a></option>
+			<option><a href="contactus.html">Contact Us</a></option>
+			<option><a href="flightbooking.html">Flight Booking</a></option>
+			<option><a href="trainbooking.html">Train Booking</a></option>
 			<option>Bus Booking</option>
 		</select>
 	</div>
 	<div class="third">
-		<h3>Login</h3>
+		<h3>Bus Booking</h3>
 	</div>
 	<div id="quote">
-		<h1>"Lets Login"</h1>
+		<h1>"Book Your Bus Tickets"</h1>
 	</div>
-	<div id="login">
-		<form action="BusBooking.html" method="POST">
-			<input type="text" name="email" placeholder="Email" required>
-			<input type="password" name="password" placeholder="Password" required>
-			<input type="submit" value="Login">
+	<div id="bus-booking">
+		<form action="busbook.php" method="POST">
+			<input type="text" name="source" placeholder="Source" required>
+			<input type="text" name="destination" placeholder="Destination" required>
+			<input type="text" name="date" placeholder="Date" required>
+			<input type="submit" value="Submit">
 		</form>
 	</div>
-</body></html>
+</body>
+</html>

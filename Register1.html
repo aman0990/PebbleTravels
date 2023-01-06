@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Signup Page</title>
 	<style type="text/css">
 		.first{
 			background: linear-gradient(to left, #ff00cc, #333399);
@@ -35,7 +35,7 @@
 			font-size: 36px;
 			text-align: center;
 		}
-		#login{
+		#signup{
 			margin-top: 20px;
 			margin-left: auto;
 			margin-right: auto;
@@ -45,7 +45,7 @@
 			border-radius: 10px;
 			box-shadow: 0px 0px 10px 0px #000;
 		}
-		#login input[type="text"],  #login input[type="password"]{
+		#signup input[type="text"],  #signup input[type="password"]{
 			width: 100%;
 			padding: 10px;
 			margin-top: 10px;
@@ -54,7 +54,7 @@
 			border-bottom: 1px solid #000;
 			outline: none;
 		}
-		#login input[type="submit"]{
+		#signup input[type="submit"]{
 			width: 100%;
 			padding: 10px;
 			margin-top: 10px;
@@ -85,16 +85,17 @@
 		</select>
 	</div>
 	<div class="third">
-		<h3>Login</h3>
+		<h3>Signup</h3>
 	</div>
 	<div id="quote">
-		<h1>"Lets Login"</h1>
+		<h1>"Lets Register"</h1>
 	</div>
-	<div id="login">
-		<form action="BusBooking.html" method="POST">
+	<div id="signup">
+		<form action="create1.html" method="POST">
+			<input type="text" name="name" placeholder="Name" required>
 			<input type="text" name="email" placeholder="Email" required>
 			<input type="password" name="password" placeholder="Password" required>
-			<input type="submit" value="Login">
+			<input type="submit" value="Submit">
 		</form>
 	</div>
-</body></html>
+</body>
